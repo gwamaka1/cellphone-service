@@ -11,11 +11,33 @@ public class CellPhone {
         this.serialNumber = serialNumber;
         this.model = model;
         this.carrier=carrier;
+
+    }
+    //Getters
+    public double getSerialNumber(){
+        return this.serialNumber;
     }
 
+    public String getModel() {
+        return model;
+    }
+
+    public String getCarrier() {
+        return carrier;
+    }
+    //Setters
+
+    public void setSerialNumber(double serialNumber) {
+        this.serialNumber = serialNumber;
+    }
+    public void setModel(String model){
+        this.serialNumber=serialNumber;
+    }
+    public void getCarrier(String carrier){
+        this.carrier = carrier;
+    }
 }
-//Getters
-public Clas
+
 
 
 
