@@ -5,15 +5,30 @@ public class CellPhone {
     private double serialNumber;
     private String model;
     private String carrier;
+    private String phoneNumber;
+    private String owner;
 
     //constructors
-    public CellPhone(double serialNumber,String model, String carrier){
-        this.serialNumber = serialNumber;
-        this.model = model;
-        this.carrier=carrier;
 
-    }
+    public CellPhone() {
+            serialNumber = 0;
+            model = "";
+            carrier = "";
+            phoneNumber = "";
+            owner = "";
+        }
+
     //Getters
+
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public String getOwner() {
+        return owner;
+    }
+
     public double getSerialNumber(){
         return this.serialNumber;
     }
@@ -27,13 +42,23 @@ public class CellPhone {
     }
     //Setters
 
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    public void setOwner(String owner) {
+        this.owner = owner;
+    }
+
     public void setSerialNumber(double serialNumber) {
         this.serialNumber = serialNumber;
     }
     public void setModel(String model){
-        this.serialNumber=serialNumber;
+        this.model =model;
     }
-    public void getCarrier(String carrier){
+
+    public void setCarrier(String carrier) {
         this.carrier = carrier;
     }
 }
